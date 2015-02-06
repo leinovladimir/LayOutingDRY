@@ -91,39 +91,27 @@ password = ENV["PASSWORD"]
 sftp_login = ENV["LOGIN"]
 # PASSWORD=youtypepasswordhere LOGIN=deployerlogin middleman deploy
 
-# SFtp
-activate :deploy do |deploy|
-  deploy.method   = :sftp
-  deploy.host     = 'example.com'
-  deploy.port     = 22
-  deploy.path     = '/data/www'
-  deploy.user     = sftp_login # no default
-  deploy.password = password
-  deploy.build_before = true # default: false
-end
-
-
-
+hostUri = "leino.ru"
 # $ rake deploy:staging
 # $ rake deploy:production
-# 
-# case ENV['TARGET'].to_s.downcase
-# when 'production'
-#   activate :deploy do |deploy|
-#     deploy.method   = :sftp
-#     deploy.host     = 'example.com'
-#     deploy.path     = '/srv/www/production-site'
-#     deploy.user     = sftp_login
-#     deploy.password = password
-#     deploy.build_before = true # default: false
-#   end
-# else
-#   activate :deploy do |deploy|
-#     deploy.method   = :sftp
-#     deploy.host     = 'example.com'
-#     deploy.path     = '/srv/www/development-site'
-#     deploy.user     = sftp_login
-#     deploy.password = password
-#     deploy.build_before = true # default: false
-#   end
-# end
+
+case ENV['TARGET'].to_s.downcase
+when 'production'
+  activate :deploy do |deploy|
+    deploy.method   = :sftp
+    deploy.host     = hostUri
+    deploy.path     = '/data/www/'
+    deploy.user     = sftp_login
+    deploy.password = password
+    deploy.build_before = true # default: false
+  end
+else
+  activate :deploy do |deploy|
+    deploy.method   = :sftp
+    deploy.host     = hostUri
+    deploy.path     = '/data/www/'
+    deploy.user     = sftp_login
+    deploy.password = password
+    deploy.build_before = true # default: false
+  end
+end
