@@ -1,59 +1,59 @@
 @font-face
-  font-family: 'chunkfiveroman'
+  font-family: 'ChunkFive'
   src: url('fonts/chunkfive-webfont.eot')
   src: url('fonts/chunkfive-webfont.eot?#iefix') format("embedded-opentype"), url('fonts/chunkfive-webfont.woff2') format("woff2"), url('fonts/chunkfive-webfont.woff') format("woff"), url('fonts/chunkfive-webfont.ttf') format("truetype"), url('fonts/chunkfive-webfont.svg#chunkfiveroman') format("svg")
   font-weight: normal
   font-style: normal
 
 @font-face
-  font-family: 'colaborate-thinregular'
+  font-family: 'Colaborate'
   src: url("fonts/colabthi-webfont.eot")
   src: url("fonts/colabthi-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/colabthi-webfont.woff2") format("woff2"), url("fonts/colabthi-webfont.woff") format("woff"), url("fonts/colabthi-webfont.ttf") format("truetype"), url("fonts/colabthi-webfont.svg#colaborate-thinregular") format("svg")
-  font-weight: normal
+  font-weight: 100
   font-style: normal
 
 @font-face
-  font-family: 'colaborate-mediumregular'
+  font-family: 'colaborate'
   src: url("fonts/colabmed-webfont.eot")
   src: url("fonts/colabmed-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/colabmed-webfont.woff2") format("woff2"), url("fonts/colabmed-webfont.woff") format("woff"), url("fonts/colabmed-webfont.ttf") format("truetype"), url("fonts/colabmed-webfont.svg#colaborate-mediumregular") format("svg")
-  font-weight: normal
+  font-weight: 300
   font-style: normal
 
 
 @font-face
-  font-family: 'colaborate-regularregular'
+  font-family: 'colaborate'
   src: url("fonts/colabreg-webfont.eot")
   src: url("fonts/colabreg-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/colabreg-webfont.woff2") format("woff2"), url("fonts/colabreg-webfont.woff") format("woff"), url("fonts/colabreg-webfont.ttf") format("truetype"), url("fonts/colabreg-webfont.svg#colaborate-regularregular") format("svg")
-  font-weight: normal
+  font-weight: 400
   font-style: normal
 
 
 @font-face
-  font-family: 'colaboratelightregular'
+  font-family: 'colaborate'
   src: url("fonts/colablig-webfont.eot")
   src: url("fonts/colablig-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/colablig-webfont.woff2") format("woff2"), url("fonts/colablig-webfont.woff") format("woff"), url("fonts/colablig-webfont.ttf") format("truetype"), url("fonts/colablig-webfont.svg#colaboratelightregular") format("svg")
-  font-weight: normal
+  font-weight: 200
   font-style: normal
 
 
 @font-face
-  font-family: 'colaborate-boldregular'
+  font-family: 'colaborate'
   src: url("fonts/colabbol-webfont.eot")
   src: url("fonts/colabbol-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/colabbol-webfont.woff2") format("woff2"), url("fonts/colabbol-webfont.woff") format("woff"), url("fonts/colabbol-webfont.ttf") format("truetype"), url("fonts/colabbol-webfont.svg#colaborate-boldregular") format("svg")
-  font-weight: normal
+  font-weight: 900
   font-style: normal
 
 
 @font-face
-  font-family: 'contraitalic'
+  font-family: 'contra'
   src: url("fonts/contra-italic-webfont.eot")
   src: url("fonts/contra-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/contra-italic-webfont.woff2") format("woff2"), url("fonts/contra-italic-webfont.woff") format("woff"), url("fonts/contra-italic-webfont.ttf") format("truetype"), url("fonts/contra-italic-webfont.svg#contraitalic") format("svg")
   font-weight: normal
-  font-style: normal
+  font-style: italic
 
 
 @font-face
-  font-family: 'contraregular'
+  font-family: 'contra'
   src: url("fonts/contra-webfont.eot")
   src: url("fonts/contra-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/contra-webfont.woff2") format("woff2"), url("fonts/contra-webfont.woff") format("woff"), url("fonts/contra-webfont.ttf") format("truetype"), url("fonts/contra-webfont.svg#contraregular") format("svg")
   font-weight: normal
@@ -68,7 +68,9 @@ h1, h2, h3, h4, h5, h6
 body
   font:
     size: 14px
-    family: 'colaboratelightregular'
+    family: 'colabora'
+    weight: 300
+    style: normal
   color: $main_textColor
 
 .activeHover
@@ -95,7 +97,7 @@ body
       text-decoration: none
       outline: 0
       color: $linkColor
-      // +transition(all .2s ease)
+      +transition(all .2s ease)
       &:hover
         background-color: #d2d2d5
         color: $topColor
@@ -104,4 +106,4 @@ body
         color: $topColor
 
 .funk 
-  font-family: 'chunkfiveroman'
+  font-family: 'chunkfive'
