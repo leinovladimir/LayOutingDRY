@@ -5,7 +5,8 @@ Last build __dev-veiw__ is [here](http://leino.ru/layoutmaking/dev/)
 
 Also you can 
 ```
-git clone https://github.com/leinovladimir/LayOutingDRY.git
+git clone https://github.com/leinovladimir/LayOutingDRY.git 
+cd LayOutingDRY
 bundle install
 middleman
 ```
