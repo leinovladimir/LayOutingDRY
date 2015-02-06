@@ -3,4 +3,9 @@ I'm studying to follow DRY pattern as it's possible using middleman, haml, sass 
 
 Last build __dev-veiw__ is [here](http://leino.ru/layoutmaking/dev/)
 
-Also you can `git clone https://github.com/leinovladimir/LayOutingDRY.git`
+Also you can 
+```
+git clone https://github.com/leinovladimir/LayOutingDRY.git
+bundle install
+middleman
+```
