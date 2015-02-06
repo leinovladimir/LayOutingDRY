@@ -1,0 +1,129 @@
+.wraperSize
+  width: 960px
+  margin: 0 auto
+
+header
+  @extend .wraperSize
+  padding-left: 5px
+  height: 170px
+
+.wraper
+  @extend .wraperSize
+  min-height: 1000px
+
+footer
+  @extend .wraperSize
+  height: 300px
+
+.tw
+  height: 50px
+
+.tw-line
+  width: 100%
+  height: 2px
+  .begin
+    width: 50px
+    height: 100%
+    +linear-gradient(to left,  #8d8e97, rbga(0,0,0,0))
+    float: left
+  .middle
+    width: 860px
+    height: 100%
+    background: rgba(204, 204, 221, 0.51)
+  .end
+    width: 50px
+    height: 100%
+    +linear-gradient(to right, #8d8e97, rbga(0,0,0,0))
+    float: right
+
+header
+  padding-top: 35px
+  .logo
+    width: 30%
+    height: 95%
+    margin-top: 4px
+    background:
+      size: 100%
+      repeat: no-repeat
+      image: url(../images/logo.png)
+    float: left
+  .menu
+    width: 69%
+    box-sizing: border-box
+    padding: 0 30px
+    float: right
+    li
+      display: inline-block
+
+.section
+  position: relative
+.box
+  box-sizing: border-box
+  -webkit-box-shadow: 1px 1px 15px 0px rgba(50, 50, 50, 0.57)
+  -moz-box-shadow:    1px 1px 15px 0px rgba(50, 50, 50, 0.57)
+  box-shadow:         1px 1px 15px 0px rgba(50, 50, 50, 0.57)
+  position: relative
+  float: left
+  width: 24%
+  margin-right: 12px
+  height: 160px
+  border-radius: 10px
+  overflow: hidden
+  &-inner
+    z-index: -1
+    box-sizing: border-box
+    border-radius: 10px
+    position: absolute
+    width: 100%
+    height: 100%
+    border: 4px solid #fff
+    +linear-gradient(to bottom, #fafafa, #e2e2e2)
+  &.end
+    margin: 0
+  .images
+    z-index: 2
+    position: relative
+    width: 100%
+    height: 75%
+    margin-bottom: 10px
+    background-repeat: no-repeat
+    &.one
+      background:
+        size: 60%
+        position:
+          x: 100%
+          y: 100%
+        image: url(../images/box_1.png)
+    &.two
+      background:
+        size: 80%
+        position:
+          x: 50%
+          y: 100%     
+        image: url(https://psv4.vk.me/c610618/u143001477/docs/570e6cfe39cc/ipad1.png?extra=7QRi75UVZPbUIY4V2sqbq7QAJug4DGq5hBoVpKY2lkAVdzdFV3K3hk18fWQVrxVo2tIfBKypm0MA9n750M1rPqvbtanKzPtB)
+    &.three
+      background:
+        size: 60%
+        position:
+          x: 60%
+          y: 50%
+        image: url(https://psv4.vk.me/c610618/u143001477/docs/ab3dbf169624/media.png?extra=8pYJQQo0_1QZ9oE7ntQVZV8vMjO60-ct1MJK8LIRWjFb77evckOArRIioXfUVjrrDbz1ByvSIufFy46PV0MMQqF-6JwiZDCp)
+    &.four
+      background:
+        size: 70%
+        position:
+          x: 50%
+          y: 65%
+        image: url(../images/box_4.png)
+  .new
+    background: #fff
+  h4
+    z-index: 1
+    font:
+      family: colaboratelightregular
+      size: 19px
+      weight: 100
+    color: #727272
+    text:
+      shadow: 1px 1px 0px #fff
+      align: center

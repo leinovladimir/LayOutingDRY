@@ -1,0 +1,69 @@
+@import ../bourbon/bourbon
+
+@import variables
+
+@import mixins
+
+@import fonts
+
+@import grid
+
+// @import temp
+
+
+html, body
+  width: 100%
+
+body
+  background: $pColor
+
+.bgDecor
+  z-index: -999
+  width: 100%
+
+.HeaderBgDecor
+  @extend .bgDecor
+  position: absolute
+  left: 0
+  right: 0
+
+.header_decor
+  @extend .HeaderBgDecor
+  background: $topColor
+  height: $headerDecorH
+
+.header_gradient
+  @extend .HeaderBgDecor
+  top: $headerDecorH
+  height: 400px
+  +linear-gradient(to bottom, $topColor, $pColor)
+  background-repeat: no-repeat
+
+.FooterBgDecor
+  @extend .bgDecor
+
+.footer_decor
+  @extend .FooterBgDecor
+  border: 1.5px solid #333366
+  position: relative
+  background-color: #353546
+  height: $footerH
+  overflow: hidden
+
+.footer_gradient
+  @extend .FooterBgDecor
+  +radial-gradient(#1e5799, #3dc3d1)
+  +radial-gradient(circle at 50% 50%, #5d5d74 10%, #353546)
+  position: absolute
+  height: 1000px
+  top: -700px
+
+.circle_shadow
+  transform: perspective(900px) rotate3d(135, 0, 0, -95deg)
+  $shd_sz: 50px
+  $shd_col: 0
+  width: $shd_sz
+  height: $shd_sz
+  background: $shd_col
+  border-radius: 50%
+  box-shadow: 3px 0 67px 48px $shd_col

@@ -1,0 +1,10 @@
+.header_decor
+.header_gradient
+%header
+  .logo
+  .menu
+    %ul 
+      - menu = ['home', 'ipad apps', 'Demonstrations', 'Leonard media', 'connect us']
+      - menu.each do |f|
+        %li
+          = link_to f ,'#'+f
