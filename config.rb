@@ -88,8 +88,8 @@ end
 # AHTUNG !!!
 # 
 password = ENV["PASSWORD"]
-sftp_login = ENV["LOGIN"]
-# PASSWORD=youtypepasswordhere LOGIN=deployerlogin middleman deploy
+sftp_login = ENV["LOGIN_SFTP"]
+# PASSWORD=sdfas LOGIN_SFTP=hsdf middleman deploy
 
 hostUri = "leino.ru"
 # $ rake deploy:staging
@@ -99,19 +99,19 @@ case ENV['TARGET'].to_s.downcase
 when 'production'
   activate :deploy do |deploy|
     deploy.method   = :sftp
-    deploy.host     = hostUri
-    deploy.path     = '/data/www/'
     deploy.user     = sftp_login
     deploy.password = password
+    deploy.host     = hostUri
+    deploy.path     = '/home/home/data/www/layoutmaking'
     deploy.build_before = true # default: false
   end
 else
   activate :deploy do |deploy|
     deploy.method   = :sftp
-    deploy.host     = hostUri
-    deploy.path     = '/data/www/'
     deploy.user     = sftp_login
     deploy.password = password
+    deploy.host     = hostUri
+    deploy.path     = '/home/home/data/www/layoutmaking'
     deploy.build_before = true # default: false
   end
 end
