@@ -111,7 +111,7 @@ else
     deploy.user     = sftp_login
     deploy.password = password
     deploy.host     = hostUri
-    deploy.path     = '/home/home/data/www/layoutmaking'
+    deploy.path     = '/home/home/data/www/layoutmaking/dev'
     deploy.build_before = true # default: false
   end
 end
