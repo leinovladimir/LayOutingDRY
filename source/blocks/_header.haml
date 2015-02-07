@@ -4,7 +4,7 @@
   .logo
   .menu
     %ul 
-      - menu = [['home', ''], ['ipad apps', '#apps' ], ['Demonstrations', '#demo' ], ['Leonard media', '#media'], ['connect us', '#contact']]
+      - menu = {'home' => '', 'ipad apps' => '#apps' , 'Demonstrations' => '#demo' , 'Leonard media' => '#media', 'connect us' => '#contact'}
       - menu.each do |menu, link|
         %li
           = link_to menu , link
