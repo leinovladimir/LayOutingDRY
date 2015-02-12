@@ -213,9 +213,7 @@ footer
     opacity: 0.5
 .fs-gallery:after
   content: url(../images/right.png)
-
 .fs-gallery:before 
-  content: '<'
   content: url(../images/left.png)
 
 
@@ -237,44 +235,51 @@ footer
       size: 39px
     &.bold
       font-weight: 900
-
   p 
     font: 
       family: 'Colaborate'
       size: 23px
       weight: 100
-  button
-    font: 
-      family: 'Colaborate'
-      size: 23px
-      weight: 400
-    color: #fff
-    padding: 10px 30px
-    border: #6464CB 1px solid
-    border-radius: 7px
-    background-color: rgba(45,107,194,1)
-    background: #2d6bc2
-    background: -moz-linear-gradient(top, #2d6bc2 0%, #174284 100%)
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #2d6bc2), color-stop(100%, #174284))
-    background: -webkit-linear-gradient(top, #2d6bc2 0%, #174284 100%)
-    background: -o-linear-gradient(top, #2d6bc2 0%, #174284 100%)
-    background: -ms-linear-gradient(top, #2d6bc2 0%, #174284 100%)
-    background: linear-gradient(to bottom, #2d6bc2 0%, #174284 100%)
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d6bc2', endColorstr='#174284', GradientType=0 )
-    &:focus 
-      outline: none
-    &:active
-      background: rgba(23,66,132,1)
-      background: -moz-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
-      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(23,66,132,1)), color-stop(100%, rgba(45,107,194,1)))
-      background: -webkit-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
-      background: -o-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
-      background: -ms-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
-      background: linear-gradient(to bottom, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174284', endColorstr='#2d6bc2', GradientType=0 )
-  button:after 
-    height: 20px
-    background: #fff
+
+button.blue
+  font: 
+    family: 'Colaborate'
+    size: 16px
+    weight: 400
+  padding: 5px 15px
+  color: #fff
+  padding: 10px 30px
+  border: #6464CB 1px solid
+  border-radius: 7px
+  background-color: rgba(45,107,194,1)
+  background: #2d6bc2
+  background: -moz-linear-gradient(top, #2d6bc2 0%, #174284 100%)
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #2d6bc2), color-stop(100%, #174284))
+  background: -webkit-linear-gradient(top, #2d6bc2 0%, #174284 100%)
+  background: -o-linear-gradient(top, #2d6bc2 0%, #174284 100%)
+  background: -ms-linear-gradient(top, #2d6bc2 0%, #174284 100%)
+  background: linear-gradient(to bottom, #2d6bc2 0%, #174284 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d6bc2', endColorstr='#174284', GradientType=0 )
+  &:focus 
+    outline: none
+  &:active
+    background: rgba(23,66,132,1)
+    background: -moz-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(23,66,132,1)), color-stop(100%, rgba(45,107,194,1)))
+    background: -webkit-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+    background: -o-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+    background: -ms-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+    background: linear-gradient(to bottom, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174284', endColorstr='#2d6bc2', GradientType=0 )
+
+button.blue.lg
+  font: 
+    family: 'Colaborate'
+    size: 23px
+    weight: 400
+  color: #fff
+  padding: 10px 30px
+  border-radius: 7px
   .box-shadow
     +transform(rotateX(85deg) rotateY(0deg) rotateZ(0deg) translateX(50px))
     height: 170px
@@ -287,19 +292,128 @@ footer
     background-position: 50%
     background-size: 99%
     background-repeat: none
-  
+ 
 .fs-img
   display: inline-block
   width: 69%
   vertical-align: top
   text-align: center
 
-.circle_shadow
-  transform: perspective(900px) rotate3d(135, 0, 0, -95deg)
-  $shd_sz: 50px
-  $shd_col: 0
-  width: $shd_sz
-  height: $shd_sz
-  background: $shd_col
-  border-radius: 50%
-  box-shadow: 3px 0 67px 48px $shd_col
+.app
+  &-titles
+    display: inline-block
+  img
+    vertical-align: baseline
+    margin-right: 20px
+  margin-top: 30px
+  font:
+    weight: 100
+    family: 'Colaborate'
+  width: 33%
+  box-sizing: border-box
+  padding-right: 20px
+  display: inline-block
+  h2 
+    font: 
+      size: 25px
+  h4
+    font: 
+      size: 15px
+      weight: 300
+    color: #76869e
+  .qouts-gallary
+p.qout
+  span.blue
+    color: #76869e
+  padding: 20px 0
+  text-align: center
+  line-height: 28px
+  background-image: radial-gradient(circle at 50%, #ecedef, #ecedef , #e8e9eb)
+  font: 
+    family: 'Contra'
+    size: 16px
+  &:before, &:after
+    content: " "
+    left: 0
+    right: 0
+    height: 1px
+    position: absolute
+    background: radial-gradient(circle at 50%, #dcddde, #e7e8ea)
+  &:before
+    top: -1px
+  &:after
+    bottom: 0
+.qouts-gallary
+  margin-top: 50px
+  margin-bottom: 50px
+  &:after
+    content: url(../images/Q-right.png)
+    position: absolute
+    top: 30%
+    right: 100px
+  &:before
+    content: url(../images/Q-left.png)
+    position: absolute
+    top: 30%
+    left: 100px
+.var 
+  margin-bottom: 50px
+  &-titles
+    padding-left: 260px
+    font: 
+      family: 'Colaborate'
+  h2 
+    font: 
+      size: 25px
+      weight: 300
+  h4
+    font: 
+      size: 15px
+      weight: 100
+    color: #76869e
+  &-img
+    display: inline-block
+    margin-top: -15px
+  &-list
+    display: inline-block
+    ul 
+      li
+        font: 
+          family: 'Colaborate'
+          size: 15px
+          weight: 100
+        line-height: 33px
+        list-style-type: none
+        &:before
+          position: absolute
+          margin-top: 2px
+          margin-left: -20px
+          content: url(../images/list-arr.png)
+  button
+    margin-left: 30px
+.features 
+  margin-bottom: 50px
+  ul 
+    li
+      font: 
+        family: 'Colaborate'
+        size: 15px
+        weight: 100
+      line-height: 33px
+      list-style-type: none
+      &:before
+        position: absolute
+        margin-top: 2px
+        margin-left: -30px
+        content: url(../images/list-plus.png)
+      &:after
+        content: " "
+        left: 0
+        right: 30%
+        height: 1px
+        position: absolute
+        height: 32px
+        border-bottom: 1px solid #d7d8da
+        border-top: 1px solid #d7d8da
+
+  

@@ -12,7 +12,7 @@ body_class: index
         %span.alex.bold Apps
       %p 
         Free and paid apps<br>for your iPad
-      %button Read More
+      %button.blue.lg Read More
       .box-shadow
     .fs-img
       %img{:src => 'images/ipad_standig.png'}
@@ -35,14 +35,57 @@ body_class: index
       %h4 Leo Entertainment 
   .section.Apps
     .app
+      .app-head
+        %img{:src => 'images/disc.png'}
+        .app-titles
+          %h2 Discover Apps
+          %h4 Lorem Ipsum is simply dummy
+      .app-text
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sinc
     .app
+      .app-head
+        %img{:src => 'images/brow.png'}
+        .app-titles
+          %h2 Browse Apps
+          %h4 Lorem Ipsum is simply dummy
+      .app-text
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sinc
     .app
+      .app-head
+        %img{:src => 'images/dev.png'}
+        .app-titles
+          %h2 Development
+          %h4 Lorem Ipsum is simply dummy
+      .app-text
+        %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever sinc
   .section.qouts
     .qouts-gallary
-  .section.varioties
+      %p.qout Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem <span class='blue'>Ipsum has been the industry's </span> standard dummy text 
+  .section.var
+    .var-titles
+      %h2 There are many variations of passages
+      %h4 Lorem Ipsum is simply dummy
+    .var-img
+      %img{:src => 'images/var.png'}
+    .var-list
+      %ul
+        %li Lorem Ipsum is simply dummy text of the printing and typesetting 
+        %li Industry. Lorem Ipsum has been the industry's standard 
+        %li Dummy text ever since the 1500s, when an unknown printer 
+        %li Took a galley of type and scrambled it to make a type specimen book. 
+        %li It has survived not only five centuries, but also the 
+      %button.blue Read More
+      %button.blue Download
+
   .section.features
-    .feature
-    .feature
-    .feature
-    .feature
-    .feature
+    %ul
+      %li
+        = lorem.sentence 
+      %li
+        = lorem.sentence 
+      %li
+        = lorem.sentence 
+      %li
+        = lorem.sentence 
+      %li
+        = lorem.sentence 
