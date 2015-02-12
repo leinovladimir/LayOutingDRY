@@ -12,7 +12,6 @@ body
   background: $pColor
 
 .clearfix , .section
-  overflow: auto
   zoom: 1
 
 .bgDecor
@@ -205,6 +204,82 @@ footer
   right: 0
   height: 1px
   background: radial-gradient(circle at 50%, #7B7B8C, transparent)
+
+
+.fs-text
+  display: inline-block
+  vertical-align: top
+  width: 30%
+  color: #d7d7e3
+  text-align: right
+  .chankf
+    font: 
+      family: 'chunkfive'
+      size: 45px
+    letter-spacing: .05em
+  .alex
+    font: 
+      family: 'alexandriaflf'
+      weight: 100
+      size: 39px
+    &.bold
+      font-weight: 900
+
+  p 
+    font: 
+      family: 'Colaborate'
+      size: 23px
+      weight: 100
+  button
+    font: 
+      family: 'Colaborate'
+      size: 23px
+      weight: 400
+    color: #fff
+    padding: 10px 30px
+    border: #6464CB 1px solid
+    border-radius: 7px
+    background-color: rgba(45,107,194,1)
+    background: #2d6bc2
+    background: -moz-linear-gradient(top, #2d6bc2 0%, #174284 100%)
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #2d6bc2), color-stop(100%, #174284))
+    background: -webkit-linear-gradient(top, #2d6bc2 0%, #174284 100%)
+    background: -o-linear-gradient(top, #2d6bc2 0%, #174284 100%)
+    background: -ms-linear-gradient(top, #2d6bc2 0%, #174284 100%)
+    background: linear-gradient(to bottom, #2d6bc2 0%, #174284 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d6bc2', endColorstr='#174284', GradientType=0 )
+    &:focus 
+      outline: none
+    &:active
+      background: rgba(23,66,132,1)
+      background: -moz-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(23,66,132,1)), color-stop(100%, rgba(45,107,194,1)))
+      background: -webkit-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+      background: -o-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+      background: -ms-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+      background: linear-gradient(to bottom, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174284', endColorstr='#2d6bc2', GradientType=0 )
+  button:after 
+    height: 20px
+    background: #fff
+  .box-shadow
+    +transform(rotateX(85deg) rotateY(0deg) rotateZ(0deg) translateX(50px))
+    height: 170px
+    width: 270px
+    opacity: 0.7
+    display: inline-block
+    border-radius: 50%
+    margin-top: -30px
+    background: url(../images/sh.png)
+    background-position: 50%
+    background-size: 99%
+    background-repeat: none
+
+.fs-img
+  display: inline-block
+  width: 69%
+  vertical-align: top
+  text-align: center
 
 .circle_shadow
   transform: perspective(900px) rotate3d(135, 0, 0, -95deg)
