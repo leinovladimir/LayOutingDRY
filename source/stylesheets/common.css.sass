@@ -256,10 +256,7 @@ button.blue
   background: -moz-linear-gradient(top, #2d6bc2 0%, #174284 100%)
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #2d6bc2), color-stop(100%, #174284))
   background: -webkit-linear-gradient(top, #2d6bc2 0%, #174284 100%)
-  background: -o-linear-gradient(top, #2d6bc2 0%, #174284 100%)
-  background: -ms-linear-gradient(top, #2d6bc2 0%, #174284 100%)
   background: linear-gradient(to bottom, #2d6bc2 0%, #174284 100%)
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d6bc2', endColorstr='#174284', GradientType=0 )
   &:focus 
     outline: none
   &:active
@@ -267,10 +264,7 @@ button.blue
     background: -moz-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(23,66,132,1)), color-stop(100%, rgba(45,107,194,1)))
     background: -webkit-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
-    background: -o-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
-    background: -ms-linear-gradient(top, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
     background: linear-gradient(to bottom, rgba(23,66,132,1) 0%, rgba(45,107,194,1) 100%)
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#174284', endColorstr='#2d6bc2', GradientType=0 )
 
 button.blue.lg
   font: 
@@ -415,5 +409,50 @@ p.qout
         height: 32px
         border-bottom: 1px solid #d7d8da
         border-top: 1px solid #d7d8da
-
-  
+.containre
+  width: 860px
+  margin: 0 auto 
+  &-head
+    &-titles
+      display: inline-block
+      width: 50%
+      font-family: 'Colaborate'
+      h1
+        font: 
+          weight: 100
+          size: 27px
+      h4
+        font:
+          size: 15px
+          weight: 300
+        color: #76869e
+    &-search
+      display: inline-block
+      vertical-align: middle
+      text-align: right
+      width: 49%
+      margin-top: -40px
+      input
+        outline: 0
+        height: 20px
+        padding: 5px 20px
+        border: 1px solid #c9c9c9
+        border-radius: 20px
+        width: 150px
+    padding: 30px
+    box-sizing: border-box
+    height: 100px
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    background: #e9eaec
+    background: -moz-linear-gradient(top, #e9eaec 0%, #c2c3c4 100%)
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #e9eaec), color-stop(100%, #c2c3c4))
+    background: -webkit-linear-gradient(top, #e9eaec 0%, #c2c3c4 100%)
+    background: linear-gradient(to bottom, #e9eaec 0%, #c2c3c4 100%)
+    border-bottom: 1px solid #f7f7f7
+  &-tail
+    height: 1000px
+    background: #e7e8ea
+body.boxes
+  .header_gradient
+    height: 250px
