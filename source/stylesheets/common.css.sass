@@ -205,6 +205,19 @@ footer
   height: 1px
   background: radial-gradient(circle at 50%, #7B7B8C, transparent)
 
+.fs-gallery:after, .fs-gallery:before 
+  position: absolute
+  top: 30%
+  cursor: pointer
+  &:hover
+    opacity: 0.5
+.fs-gallery:after
+  content: url(../images/right.png)
+
+.fs-gallery:before 
+  content: '<'
+  content: url(../images/left.png)
+
 
 .fs-text
   display: inline-block
@@ -274,7 +287,7 @@ footer
     background-position: 50%
     background-size: 99%
     background-repeat: none
-
+  
 .fs-img
   display: inline-block
   width: 69%
