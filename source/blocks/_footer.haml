@@ -1,31 +1,29 @@
 .footer_decor
-  %footer
-    .tw-box
-      .tw-icon
-      .tw-textbox
-        %p.tw-text
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text  of the printing and typesetting industry.
-        %span.tw-auther - versions of Lorem Ipsum.
-    .news
-      %h4.footer-heading
-      %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-      %form
-        %input 
-        %buttom.Subscribe Subscribe
-    .contact-form
-      %form
-        .input-groupe
-          %input
-          %input
-          %input
-        %input.textfield
-        %buttom.Submite
-    .sm-icons
-      %a.sm-tw{:href => "//twitter.com"}
-      %a.sm-fb{:href => "//facebook.com"}
-      %a.sm-in{:href => "//linkdin.com"}
   .footer_gradient
-
+%footer
+  .tw-box
+    %img{:src => 'images/tw-icon.png'}
+      %p.tw-text
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text  of the printing and typesetting industry.
+      %span.tw-auther - versions of Lorem Ipsum.
+  .news
+    %h4 Newsletter
+    %p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    %input{:type => 'text', :placeholder => 'Your mail here'}
+    %button Subscribe
+    .s-icons
+      %img{:src => 'images/f.png'}
+      %img{:src => 'images/i.png'}
+  .contact-form
+    %h4 Contact form
+    .input-gr
+      %input{:type => 'text'}
+      %input{:type => 'text'}
+      %input{:type => 'text'}
+    .input-gr
+      %textarea
+      %button.submite Submite
+  %p.author Design by cssauthor.com © 2012-2013  Valid HTML5 and CSS3.
 
 
 
