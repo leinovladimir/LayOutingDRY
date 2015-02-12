@@ -451,8 +451,91 @@ p.qout
     background: linear-gradient(to bottom, #e9eaec 0%, #c2c3c4 100%)
     border-bottom: 1px solid #f7f7f7
   &-tail
-    height: 1000px
+    min-height: 600px
     background: #e7e8ea
+    padding: 0 50px
 body.boxes
   .header_gradient
     height: 250px
+
+.pads
+  position: relative
+  padding: 50px 0
+  margin: 0 auto
+  text-align: center
+  letter-spacing: 30px
+
+  .pad
+    text-align: left
+    display: inline-block
+    width: 220px
+    letter-spacing: normal
+    font: 
+      family: 'Colaborate'
+    h2 
+      margin-top: 10px
+      font: 
+        size: 25px
+        weight: 300
+    h4
+      font: 
+        size: 15px
+        weight: 100
+      color: #76869e
+      margin-bottom: 20px
+  &:after, &:before 
+    position: absolute
+    top: 40%
+    cursor: pointer
+  &:after
+    right: -30px
+    content: url(../images/right.png)
+  &:before 
+    left: -30px
+    content: url(../images/left.png)
+.tabs 
+  border-bottom: 1px solid #38384a
+  .tab
+    display: inline-block
+    padding: 10px 20px
+    background: #c7c7c8
+    color: #fff
+    font: 
+      size: 18px
+      family: colaborate
+      weight: 100
+    border-top-left-radius: 8px
+    border-top-right-radius: 8px
+  .active 
+    background: #38384a
+.iphones
+  margin-bottom: 50px
+  .iphone
+    font: 
+      family: colaborate
+    margin-top: 50px
+    display: inline-block
+    width: 33%
+    img
+      vertical-align: middle
+    .iphone-text
+      padding-left: 10px
+      display: inline-block
+      vertical-align: middle
+      p 
+        width: 100px
+        font-weight: 100
+        margin: 0
+        margin-bottom: 12px
+      button
+        background: #3f3f51
+        border: 0
+        padding: 5px 10px
+        color: #fff
+        border-radius: 5px
+        outline: none
+        &:hover
+          opacity: 0.7
+        &:active
+          opacity: 0.3
+
