@@ -3,8 +3,8 @@ I'm studying to follow DRY pattern as it's possible using middleman, haml, sass 
 
 
 ```
-git clone https://github.com/leinovladimir/LayOutingDRY.git 
-cd LayOutingDRY
-bundle install
-middleman
+$ git clone https://github.com/leinovladimir/LayOutingDRY.git 
+$ cd LayOutingDRY
+$ bundle install
+$ middleman
 ```
